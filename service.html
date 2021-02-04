@@ -1,0 +1,106 @@
+<html>
+<head>
+</head>
+<title>
+GetRested
+</title>
+
+<style>
+body 
+{
+  background-image: url('About us.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; 
+}
+</style>
+
+<body>
+
+<style>
+a:link, a:visited {
+  background-color: #4f5964 ;
+  color: white;
+  font-size:20px;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color:#eacec5;}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    background-color: #4f5964;
+    overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #eacec5;
+  color: #4f5964;
+}
+
+.topnav a.active {
+  background-color: #eacec5;
+  color: black;
+}
+
+.topnav-right {
+  float: right;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+      <i class="fa fa-caret-down"></i>
+	  <a href="getrested.html ">Home</a>
+      <a href="aboutus.html " >About us</a>  
+	  <a href="contact.html " >Contact Us</a>
+	    <div class="topnav-right">
+	  <a href="register.html " >Registration</a> 
+	  <a href="login.html ">Login</a> 
+</div>
+
+<style>
+.mySlides {display:none;}
+</style>
+<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="food1.png" style="width:100%">
+  <img class="mySlides" src="food2.png" style="width:100%">
+  <img class="mySlides" src="food3.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
